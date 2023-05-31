@@ -1,12 +1,17 @@
 <html>
 <title>For Avalara POC</title>
 <body>
-	<input type="text" id="url"  placeholder="Enter URL to be redirected to..."/>
-	<button id="myButton" class="float-left submit-button" >Take me...</button>
+	<input type="text" id="url" placeholder="Enter URL to be redirected to..."/>
+	<input type="button" value="Go" id="myButton"/>
+	
+	<a href="https://fa-enjx-pintlabfadev.fa.ocs.oc-test.com:443/fscmUI/faces/FuseWelcome">Sundar SE</a>
+	
+	<a href="https://fa-epbk-pintlabfadev.fa.ocs.oc-test.com:443/fscmUI/faces/FuseWelcome">Kavin SE</a>
 
 <script type="text/javascript">
-	var url=document.getElementById('url').value
+	
     document.getElementById("myButton").onclick = function () {
+		var url=document.getElementById("url").value;
 		alert("redirecting to "+url);
         location.href = url;
     };
