@@ -1,0 +1,16 @@
+<html>
+<title>For Avalara POC</title>
+<body>
+	<input type='text' id='url'/>
+	<button id="myButton" class="float-left submit-button" >Home</button>
+
+<script type="text/javascript">
+	var url=document.getElementById('url').value
+    document.getElementById("myButton").onclick = function () {
+		alert("redirecting to "+url);
+        location.href = url;
+    };
+</script>
+
+</body>
+</html>
